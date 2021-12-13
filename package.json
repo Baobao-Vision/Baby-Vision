@@ -1,0 +1,25 @@
+{
+  "name": "Baby-Vision",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "server": "nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baobao-Vision/Baby-Vision.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Baobao-Vision/Baby-Vision/issues"
+  },
+  "homepage": "https://github.com/Baobao-Vision/Baby-Vision#readme"
+}
