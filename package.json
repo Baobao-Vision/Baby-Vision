@@ -2,7 +2,7 @@
   "name": "Baby-Vision",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "index.html",
   "dependencies": {
     "@google-cloud/vision": "^2.4.0",
     "@tensorflow-models/coco-ssd": "^2.2.2",

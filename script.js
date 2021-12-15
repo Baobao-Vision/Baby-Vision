@@ -39,29 +39,9 @@ video.addEventListener("play", () => {
     console.log("faces", faces);
 
     if (faces.length === 0) {
-      let sendAlert = new Audio("./assets/beep.mp3");
+      let sendAlert = new Audio("./assets/warning.mp3");
       sendAlert.play();
       alert("Baby's face is covered!");
     }
   }, 100);
-
-  console.log("faceapi.detectALlFaces", faceapi.detectAllFaces);
-  //   if (faces.length <= 0) {
-  //     let sendAlert = new Audio("./assets/beep.mp3");
-  //     sendAlert.play();
-  //     alert("Baby's face is covered!");
-  //   }
-  //   for (const face of faces) {
-  //     const features = {
-  //       jaw: face.landmarks.positions.slice(0, 17),
-  //       eyebrowLeft: face.landmarks.positions.slice(17, 22),
-  //       eyebrowRight: face.landmarks.positions.slice(22, 27),
-  //       noseBridge: face.landmarks.positions.slice(27, 31),
-  //       nose: face.landmarks.positions.slice(31, 36),
-  //       eyeLeft: face.landmarks.positions.slice(36, 42),
-  //       eyeRight: face.landmarks.positions.slice(42, 48),
-  //       lipOuter: face.landmarks.positions.slice(48, 60),
-  //       lipInner: face.landmarks.positions.slice(60),
-  //     };
-  // }
 });
