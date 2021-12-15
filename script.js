@@ -38,7 +38,7 @@ video.addEventListener("play", () => {
 
     console.log("faces", faces);
 
-    if (faces === 0) {
+    if (faces.length === 0) {
       let sendAlert = new Audio("./assets/beep.mp3");
       sendAlert.play();
       alert("Baby's face is covered!");
