@@ -1,16 +1,51 @@
 body {
-  background-color: #f8edeb;
+  background-color: #f3d8c7;
 }
 
 h1 {
-  font-size: 50;
+  font-size: 100;
   font-weight: 700;
+  top: 500;
+  right: 225;
   color: #343a40;
-  line-height: 400px;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 button {
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 16px;
+  width: 5%;
+  padding: 6;
+  background-color: transparent;
+  color: #343a40;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  z-index: 1;
+}
+
+#babyImg {
+  position: relative;
+  left: 850;
+  bottom: 660;
+  width: 400;
+  z-index: 2;
+}
+
+#backgroundImg {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  z-index: -1;
+  width: 1275;
+  padding-bottom: 150;
+  left: 125;
+}
+
+#buttonDiv {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  bottom: 825;
+  left: 480;
 }
