@@ -23,15 +23,25 @@ video.addEventListener("play", () => {
   document.body.append(canvas);
   const displaySize = { width: video.width, height: video.height };
   faceapi.matchDimensions(canvas, displaySize);
+
   setInterval(async () => {
-    const detections = await faceapi
+    const faces = await faceapi
       .detectAllFaces(video, new faceapi.TinyFaceDetectorOptions())
       .withFaceLandmarks()
       .withFaceExpressions();
-    const resizedDetections = faceapi.resizeResults(detections, displaySize);
+
+    const resizedDetections = faceapi.resizeResults(faces, displaySize);
     canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
     faceapi.draw.drawDetections(canvas, resizedDetections);
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
     faceapi.draw.drawFaceExpressions(canvas, resizedDetections);
+
+    console.log("faces", faces);
+
+    if (faces.length === 0) {
+      let sendAlert = new Audio("./assets/warning.mp3");
+      sendAlert.play();
+      alert("Baby's face is covered!");
+    }
   }, 100);
 });

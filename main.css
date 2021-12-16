@@ -1,0 +1,53 @@
+body {
+  background-color: #f3d8c7;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 6.5vw;
+  font-weight: 700;
+  top: 450;
+  right: 250;
+  color: #343a40;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+button {
+  font-size: 16px;
+  width: 100;
+  padding: 6;
+  background-color: transparent;
+  color: #343a40;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  z-index: 2;
+}
+
+#babyImg {
+  position: relative;
+  float: right;
+  padding: 100;
+  bottom: 775;
+  z-index: 2;
+}
+
+#backgroundImg {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  z-index: -1;
+  width: 1700;
+  padding-bottom: 150;
+  left: 80;
+}
+
+#buttonDiv {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  bottom: 475;
+  left: 415;
+}
